@@ -1,12 +1,11 @@
-Ideal, Natural, & Flat-top -Sampling
-Aim
+# Ideal, Natural, & Flat-top -Sampling
+# Aim
 Write a simple Python program for the construction and reconstruction of ideal, natural, and flattop sampling.
-
-Tools required
+# Tools required
 Python IDE with Numpy and Scipy
-
-Program
-Ideal sampling
+# Program
+### Ideal sampling
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.signal import resample
@@ -43,7 +42,9 @@ plt.ylabel('Amplitude')
 plt.grid(True)
 plt.legend()
 plt.show()
-Natural sampling
+```
+### Natural sampling
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.signal import butter, lfilter
@@ -120,7 +121,9 @@ plt.grid(True)
 
 plt.tight_layout()
 plt.show()
-Flat-Top sampling
+```
+### Flat-Top sampling
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.signal import butter, lfilter
@@ -190,18 +193,24 @@ plt.legend()
 plt.grid(True)
 plt.tight_layout()
 plt.show()
-Output Waveform
-Ideal sampling
-<img width="866" height="393" alt="image" src="https://github.com/user-attachments/assets/a11cd8da-66dd-4dd9-aa6f-b1d19a844607" />
-<img width="866" height="393" alt="image" src="https://github.com/user-attachments/assets/a23d341b-a14c-434c-83a0-8a1da66f33c9" />
-<img width="866" height="393" alt="image" src="https://github.com/user-attachments/assets/d4a21ce5-79cb-41ee-bdfe-e6caf393ebde" />
+```
+# Output Waveform
+### Ideal sampling
+<img width="866" height="393" alt="image" src="https://github.com/user-attachments/assets/0e4aecc5-3da5-4908-8af2-eff4a74a015c" />
+<img width="866" height="393" alt="image" src="https://github.com/user-attachments/assets/75d76bee-eafd-4412-9a25-61068653d9d5" />
+<img width="866" height="393" alt="image" src="https://github.com/user-attachments/assets/09f268ec-4f9e-43b7-941e-e24a0a4db142" />
 
-Natural sampling
-<img width="1390" height="990" alt="image" src="https://github.com/user-attachments/assets/cd8934ba-c8c1-4f80-9485-293b06f264f7" />
+### Natural sampling
+<img width="1390" height="990" alt="image" src="https://github.com/user-attachments/assets/f314acb3-f209-4ae0-b0f1-9d4182c47e34" />
+<img width="1390" height="990" alt="image" src="https://github.com/user-attachments/assets/c55c090f-6843-431b-b246-d3eafc36de14" />
+<img width="1390" height="990" alt="image" src="https://github.com/user-attachments/assets/19af3465-62ef-44d9-ab75-5543543f5062" />
+<img width="1390" height="990" alt="image" src="https://github.com/user-attachments/assets/dec834b9-f395-474b-bf44-fadaedb1c447" />
 
+### Flat-Top sampling
+<img width="1398" height="990" alt="image" src="https://github.com/user-attachments/assets/c9dd1458-9353-4248-84f1-df2e80c6d79e" />
+<img width="1398" height="990" alt="image" src="https://github.com/user-attachments/assets/e6897944-8039-4e16-9104-6cd9bebb0728" />
+<img width="1398" height="990" alt="image" src="https://github.com/user-attachments/assets/8cf1119b-38b3-4419-bc0e-04484265c3b8" />
+<img width="1398" height="990" alt="image" src="https://github.com/user-attachments/assets/d6fd1004-f563-4cd4-ad18-66e3f438ca7d" />
 
-Flat-Top sampling
-<img width="1398" height="990" alt="image" src="https://github.com/user-attachments/assets/6de90c7e-99a1-4af7-85f2-d9fc719bcb68" />
-
-Results
+# Results
 Ideal, natural, and flat-top sampling convert a continuous signal into discrete samples. Ideal sampling is theoretical and perfect, while natural and flat-top are practical methods; all preserve the original signal information if Nyquist criterion is satisfied.
